@@ -1,101 +1,63 @@
 import Image from "next/image";
+import Herosection from "./components/herosection";
 
-export default function Home() {
+export default function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div>
+      <div className="min-h-screen bg-[#043873] ">
+       <Herosection Heading="Get More Done with whitepace" paragraph="Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks" Button="Try Whitepace free" div="bg-[#C4DEFD] flex gap-1 w-[650px] h-[400px] " />
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+       <div className="w-[1440px] h-[1500px] absolute top-[700px] left-[1px] ">
+        <div>
+       <Herosection Heading="Project Management" color="text-[#212529] w-[370px] mr-[20px] h-[270px] " paragraph="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note." Button="Get Started" div="bg-[#C4DEFD] ml-[30px] flex gap-1 w-[550px] h-[420px] "/>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="absolute top-[700px] left-[110px] flex gap-[100px] ">
+          <div className=''>
+          <Image src='/WorkTogether.png' alt="logo" width={500} height={660} />
+          </div>
+          <div className='absolute -top-[150px] left-[500px] '>
+       <Herosection Heading="Work together" color="text-[#212529] w-[500px] mr-[20px] h-[170px]  " paragraph="With whitepace, share your notes with your colleagues and collaborate on them.You can also publish a note to the internet and share the URL with others." Button="Get Started" 
+        />
+        </div>
+        </div>
+        <div className="h-[600px] w-full bg-[#043873] absolute top-[1300px] ">
+        <Herosection Heading="Use as Extension" color="text-[#FFFFFF] w-[550px] mr-[20px] h-[150px]  " paragraph="Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes." Button="Let&apos;s Go" div="bg-[#C4DEFD] flex -mt-[50px] w-[550px] h-[400px] "
+        />
+      </div>
+
+
+       </div>
+        <div className="h-[600px] w-full absolute top-[2500px] ">
+        <Herosection Heading="Customise it to your needs" color="text-[#212529] absolute left-[800px] w-[390px] h-[250px]" paragraph="Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API." Button="Let&apos;s Go" div="bg-[#C4DEFD] absolute flex w-[550px] h-[400px] "
+        />
+
+      <div className="h-[400px] w-full bg-[#043873] text-[#FFFFFF] flex flex-col items-center justify-center absolute top-[650px] gap-[40px] ">
+        <div className="w-[900px]   ">
+        <h1 className="font-bold text-6xl leading-[97px] ">Your work, everywhere you are</h1>
+        <p className="font-normal text-lg text-center trackingp-[-2%] ">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
+        </div>
+        
+        <button className="bg-[#4F9CF9] w-40 h-14 flex justify-center items-center px-2 py-4 rounded-[8px] p-4 ">
+        <p className="font-medium text-lg leading-5 tracking-[-2%] text-[#FFFFFF] ">Try Taskey </p>
+        </button>
+      </div>
+        <div className="h-[600px] w-full absolute top-[950px] flex flex-col justify-center items-center gap-[80px] ">
+            <h1 className="font-bold text-6xl leading-[97px] ">Our sponsors</h1>
+            <div className="w-[1000px] flex justify-between  ">
+              <Image src='/Group.png' alt="group-logo" width={50} height={50}/>
+              <Image src='/Microsoft.png' alt="Microsoft-logo" width={200} height={50}/>
+              <Image src='/Slack.png' alt="Slack-logo" width={200} height={50}/>
+              <Image src='/Google.png' alt="Google-logo" width={200} height={50} />
+            </div>
+        </div>
+
+        </div>
+
+      </div>
+     
     </div>
-  );
+    
+  )
 }
